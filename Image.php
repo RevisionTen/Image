@@ -575,9 +575,9 @@ class Image
     /**
      * Generates and output a png cached file.
      */
-    public function webp()
+    public function webp($quality = 80)
     {
-        return $this->cacheFile('webp');
+        return $this->cacheFile('webp', $quality);
     }
 
     /**
